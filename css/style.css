@@ -117,27 +117,27 @@ h3 {
 
 /* Контент кнопок */
 .menu-button__icon-burger {
-  background-image: url(ic/icon-burger.svg);
+  background-image: url(/ic/icon-burger.svg);
 }
 
 .menu-button__icon-tools {
-  background-image: url(ic/icon-tools.svg);
+  background-image: url(/ic/icon-tools.svg);
 }
 
 .menu-button__icon-search {
-  background-image: url(ic/icon-search.svg);
+  background-image: url(/ic/icon-search.svg);
 }
 
 .menu-button__icon-phone {
-  background-image: url(ic/icon-phone.svg);
+  background-image: url(/ic/icon-phone.svg);
 }
 
 .menu-button__icon-chat {
-  background-image: url(ic/icon-chat.svg);
+  background-image: url(/ic/icon-chat.svg);
 }
 
 .menu-button__icon-contact {
-  background-image: url(ic/icon-contact.svg);
+  background-image: url(/ic/icon-contact.svg);
 }
 
 /* Блоки кнопок для псевдоэлементов и отображения на разных разрешениях(ширине) */
@@ -353,7 +353,7 @@ h3 {
 
 .text__continue::before {
   content: "";
-  background-image: url(ic/icon-button-arrow.svg);
+  background-image: url(/ic/icon-button-arrow.svg);
   position: absolute;
   width: 7.5px;
   height: 10px;
