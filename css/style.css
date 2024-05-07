@@ -20,17 +20,17 @@ button {
 
 @font-face {
   font-family: "TT Lakes";
-  src: local("Lexend Peta Regular"), local("LexendPeta-Regular"), url("/fonts/TTLakes-Regular.woff") format("woff"), url(../fonts/TTLakes-Regular.ttf) format("ttf");
+  src: local("Lexend Peta Regular"), local("LexendPeta-Regular"), url("../fonts/TTLakes-Regular.woff") format("woff"), url(../fonts/TTLakes-Regular.ttf) format("ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "TT Lakes bold";
-  src: local("Lexend Peta Regular"), local("LexendPeta-Regular"), url("/fonts/TTLakes-ExtraBold.woff") format("woff"), url(../fonts/TTLakes-ExtraBold.ttf) format("ttf");
+  src: local("Lexend Peta Regular"), local("LexendPeta-Regular"), url("../fonts/TTLakes-ExtraBold.woff") format("woff"), url(../fonts/TTLakes-ExtraBold.ttf) format("ttf");
   font-weight: 800;
 }
 @font-face {
   font-family: "TT Lakes medium";
-  src: local("Lexend Peta Regular"), local("LexendPeta-Regular"), url("/fonts/TTLakes-Medium.woff") format("woff"), url(../fonts/TTLakes-Medium.ttf) format("ttf");
+  src: local("Lexend Peta Regular"), local("LexendPeta-Regular"), url("../fonts/TTLakes-Medium.woff") format("woff"), url(../fonts/TTLakes-Medium.ttf) format("ttf");
   font-weight: 500;
 }
 body {
