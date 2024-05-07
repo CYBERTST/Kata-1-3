@@ -199,6 +199,7 @@ h3 {
 @media (max-width: 1120px) {
   .main__button-section {
     overflow: scroll;
+    mask: linear-gradient(90deg, #fff 95%, transparent);
   }
 }
 @media (min-width: 768px) {
