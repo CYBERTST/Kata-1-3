@@ -196,7 +196,7 @@ h3 {
   margin-left: -16px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .main__button-section {
     overflow: scroll;
   }
