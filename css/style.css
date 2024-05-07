@@ -1,11 +1,6 @@
 @charset "UTF-8";
 /* позиционирование контента внутри кнопок */
-.menu-button__icon-burger,
-.menu-button__icon-tools,
-.menu-button__icon-search,
-.menu-button__icon-phone,
-.menu-button__icon-chat,
-.menu-button__icon-contact {
+.menu-button__icon-burger, .menu-button__icon-tools, .menu-button__icon-search, .menu-button__icon-phone, .menu-button__icon-chat, .menu-button__icon-contact {
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -25,23 +20,17 @@ button {
 
 @font-face {
   font-family: "TT Lakes";
-  src: local("Lexend Peta Regular"), local("LexendPeta-Regular"),
-    url("/fonts/TTLakes-Regular.woff") format("woff"),
-    url(/fonts/TTLakes-Regular.ttf) format("ttf");
+  src: local("Lexend Peta Regular"), local("LexendPeta-Regular"), url("/fonts/TTLakes-Regular.woff") format("woff"), url(../fonts/TTLakes-Regular.ttf) format("ttf");
   font-weight: normal;
 }
 @font-face {
   font-family: "TT Lakes bold";
-  src: local("Lexend Peta Regular"), local("LexendPeta-Regular"),
-    url("/fonts/TTLakes-ExtraBold.woff") format("woff"),
-    url(/fonts/TTLakes-ExtraBold.ttf) format("ttf");
+  src: local("Lexend Peta Regular"), local("LexendPeta-Regular"), url("/fonts/TTLakes-ExtraBold.woff") format("woff"), url(../fonts/TTLakes-ExtraBold.ttf) format("ttf");
   font-weight: 800;
 }
 @font-face {
   font-family: "TT Lakes medium";
-  src: local("Lexend Peta Regular"), local("LexendPeta-Regular"),
-    url("/fonts/TTLakes-Medium.woff") format("woff"),
-    url(/fonts/TTLakes-Medium.ttf) format("ttf");
+  src: local("Lexend Peta Regular"), local("LexendPeta-Regular"), url("/fonts/TTLakes-Medium.woff") format("woff"), url(../fonts/TTLakes-Medium.ttf) format("ttf");
   font-weight: 500;
 }
 body {
@@ -128,27 +117,27 @@ h3 {
 
 /* Контент кнопок */
 .menu-button__icon-burger {
-  background-image: url(/ic/icon-burger.svg);
+  background-image: url(../ic/icon-burger.svg);
 }
 
 .menu-button__icon-tools {
-  background-image: url(/ic/icon-tools.svg);
+  background-image: url(../ic/icon-tools.svg);
 }
 
 .menu-button__icon-search {
-  background-image: url(/ic/icon-search.svg);
+  background-image: url(../ic/icon-search.svg);
 }
 
 .menu-button__icon-phone {
-  background-image: url(/ic/icon-phone.svg);
+  background-image: url(../ic/icon-phone.svg);
 }
 
 .menu-button__icon-chat {
-  background-image: url(/ic/icon-chat.svg);
+  background-image: url(../ic/icon-chat.svg);
 }
 
 .menu-button__icon-contact {
-  background-image: url(/ic/icon-contact.svg);
+  background-image: url(../ic/icon-contact.svg);
 }
 
 /* Блоки кнопок для псевдоэлементов и отображения на разных разрешениях(ширине) */
@@ -364,7 +353,7 @@ h3 {
 
 .text__continue::before {
   content: "";
-  background-image: url(/ic/icon-button-arrow.svg);
+  background-image: url(../ic/icon-button-arrow.svg);
   position: absolute;
   width: 7.5px;
   height: 10px;
