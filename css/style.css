@@ -201,6 +201,10 @@ h3 {
     overflow: scroll;
     mask: linear-gradient(90deg, #fff 95%, transparent);
   }
+
+  .main {
+    height: 90vh;
+  }
 }
 @media (min-width: 768px) {
   .menu__logo {
