@@ -162,7 +162,7 @@ h3 {
 }
 
 .menu-tablet,
-.desktop-button,
+.desktop-buttons,
 .text__tablet,
 .text__desktop {
   display: none;
@@ -271,13 +271,13 @@ h3 {
   .main-title::before {
     left: -35px;
   }
-  .desktop-button__container {
+  .desktop-buttons__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
   }
-  .desktop-button {
+  .desktop-buttons {
     display: flex;
     gap: 32px;
   }
