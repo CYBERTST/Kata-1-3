@@ -161,10 +161,10 @@ h3 {
   left: -20px;
 }
 
-.menu-tablet--display,
-.desktop-button--display,
-.text__tablet--display,
-.text__desktop--display {
+.menu-tablet,
+.desktop-button,
+.text__tablet,
+.text__desktop {
   display: none;
 }
 
@@ -194,7 +194,7 @@ h3 {
   overflow: hidden;
 }
 
-.company__logo-img {
+.section__logo-img {
   width: 100vw;
   margin-left: -16px;
 }
@@ -213,7 +213,7 @@ h3 {
     margin-right: auto;
     margin-left: 20px;
   }
-  .menu-tablet--display {
+  .menu-tablet {
     display: flex;
     gap: 16px;
   }
@@ -246,14 +246,14 @@ h3 {
   .text__mobile {
     display: none;
   }
-  .text__tablet--display {
+  .text__tablet {
     display: block;
   }
   .section__flex {
     display: flex;
     gap: 48px;
   }
-  .company__logo-img {
+  .section__logo-img {
     height: 205px;
     width: 360px;
   }
@@ -277,7 +277,7 @@ h3 {
     align-items: center;
     margin-bottom: 12px;
   }
-  .desktop-button--display {
+  .desktop-button {
     display: flex;
     gap: 32px;
   }
@@ -297,14 +297,14 @@ h3 {
   .section__flex {
     gap: 36px;
   }
-  .company__logo-img {
+  .section__logo-img {
     height: 305px;
     width: 530px;
   }
-  .text__tablet--display {
+  .text__tablet {
     display: none;
   }
-  .text__desktop--display {
+  .text__desktop {
     display: block;
   }
 }
