@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* позиционирование контента внутри кнопок */
-.button__icon--burger, .button__icon--tools, .button__icon--search, .button__icon--phone, .button__icon--chat, .button__icon--contact {
+.menu-button__icon-burger, .menu-button__icon-tools, .menu-button__icon-search, .menu-button__icon-phone, .menu-button__icon-chat, .menu-button__icon-contact {
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -15,11 +15,7 @@ html {
 
 button {
   padding: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
+  font-family: "TT Lakes", sans-serif;
 }
 
 @font-face {
@@ -40,8 +36,8 @@ p {
 body {
   margin: 0;
   padding: 0;
-  font-family: "TT Lakes", sans-serif;
   min-width: 320px;
+  font-family: "TT Lakes", sans-serif;
 }
 
 h1,
@@ -73,19 +69,23 @@ h3 {
 
 .contain-btn {
   display: flex;
-  gap: 16px;
+  gap: 20px;
   align-items: center;
 }
 
-.button {
+.header-button {
   position: relative;
   display: flex;
   border: none;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 600;
   background-color: inherit;
 }
 
 /* Кнопки в меню, стилизация */
-.button__icon {
+.menu-button {
   background-color: #ff3e79;
   width: 40px;
   height: 40px;
@@ -96,11 +96,7 @@ h3 {
 }
 
 /* Кнопки в мейне, стилизация */
-.main__button-section {
-  display: flex;
-}
-
-.main__button {
+.main-button {
   font-family: "TT Lakes medium", sans-serif;
   display: inline-block;
   padding: 8px 16px;
@@ -114,44 +110,48 @@ h3 {
   border: 2px solid transparent;
 }
 
-.main__button:hover {
+.main__button-section {
+  display: flex;
+}
+
+.main-button:hover {
   border: 2px solid #b8ffec;
   background-color: #ffffff;
 }
 
 /* Контент кнопок */
-.button__icon--burger {
+.menu-button__icon-burger {
   background-image: url(../ic/icon-burger.svg);
 }
 
-.button__icon--tools {
+.menu-button__icon-tools {
   background-image: url(../ic/icon-tools.svg);
 }
 
-.button__icon--search {
+.menu-button__icon-search {
   background-image: url(../ic/icon-search.svg);
 }
 
-.button__icon--phone {
+.menu-button__icon-phone {
   background-image: url(../ic/icon-phone.svg);
 }
 
-.button__icon--chat {
+.menu-button__icon-chat {
   background-image: url(../ic/icon-chat.svg);
 }
 
-.button__icon--contact {
+.menu-button__icon-contact {
   background-image: url(../ic/icon-contact.svg);
 }
 
 /* Блоки кнопок для псевдоэлементов и отображения на разных разрешениях(ширине) */
-.menu__services {
+.menu__button-group {
   position: relative;
   display: flex;
   gap: 16px;
 }
 
-.menu__services::before {
+.menu__button-group::before {
   content: "";
   background-color: #eaeaea;
   border-radius: 1px;
@@ -162,23 +162,23 @@ h3 {
   left: -20px;
 }
 
-.menu__contacts,
-.header__buttons {
+.menu-tablet--display,
+.desktop-button--display,
+.text__tablet--display,
+.text__desktop--display {
   display: none;
 }
 
-.main {
-  background-color: #f8f8f8;
-  height: calc(100vh - 106px);
+.main-title {
+  position: relative;
+  display: flex;
 }
 
 .main__title {
-  position: relative;
-  display: flex;
   margin-bottom: 24px;
 }
 
-.main__title::before {
+.main-title::before {
   content: "";
   display: block;
   background-color: #41f6d7;
@@ -191,46 +191,37 @@ h3 {
 }
 
 .main__button-section {
-  overflow: scroll;
-  mask: linear-gradient(90deg, transparent, #fff 3%, #fff 95%, transparent);
   margin-bottom: 24px;
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.content__text {
-  height: 90px;
   overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
 }
 
-.content__button {
-  align-self: flex-start;
-}
-
-.about__logo {
+.company__logo-img {
   width: 100vw;
   margin-left: -16px;
 }
 
+@media (max-width: 1120px) {
+  .main__button-section {
+    overflow: scroll;
+    mask: linear-gradient(90deg, #fff 95%, transparent);
+  }
+
+  .main {
+    height: 90vh;
+  }
+}
 @media (min-width: 768px) {
   .menu__logo {
     margin-right: auto;
     margin-left: 20px;
   }
 
-  .menu__contacts {
+  .menu-tablet--display {
     display: flex;
     gap: 16px;
   }
 
-  .menu__contacts {
+  .menu__tablet {
     margin-right: 22px;
   }
 
@@ -238,15 +229,11 @@ h3 {
     padding: 24px;
   }
 
-  .contain-btn {
-    gap: 20px;
-  }
-
-  .button--burger {
+  .menu-button__icon-burger {
     position: relative;
   }
 
-  .button--burger::after {
+  .menu-button__icon-burger::after {
     content: "";
     background-color: #eaeaea;
     border-radius: 1px;
@@ -257,25 +244,29 @@ h3 {
     right: -20px;
   }
 
-  .main__title::before {
+  .main-title::before {
     left: -24px;
   }
 
-  .main__title,
+  .main-title,
   .main__button-section {
     margin-bottom: 32px;
   }
 
-  .content__text {
-    height: 130px;
+  .text__mobile {
+    display: none;
   }
 
-  .about {
+  .text__tablet--display {
+    display: block;
+  }
+
+  .section-flex {
     display: flex;
     gap: 48px;
   }
 
-  .about__logo {
+  .company__logo-img {
     height: 205px;
     width: 360px;
   }
@@ -293,31 +284,20 @@ h3 {
     margin: 0;
   }
 
-  .main__title::before {
+  .main-title::before {
     left: -35px;
   }
 
-  .main__header {
+  .desktop-button-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 12px;
   }
 
-  .header__buttons {
+  .desktop-button--display {
     display: flex;
     gap: 32px;
-  }
-
-  .button {
-    align-items: center;
-    gap: 8px;
-    cursor: pointer;
-    font-weight: 600;
-  }
-
-  .main {
-    height: 100vh;
   }
 
   .main__button-section {
@@ -325,27 +305,42 @@ h3 {
     flex-wrap: wrap;
   }
 
-  .about {
+  .section-flex {
     gap: 36px;
   }
 
-  .about__logo {
+  .company__logo-img {
     height: 305px;
     width: 530px;
   }
 
-  .main__button-section {
-    mask: unset;
+  .text__tablet--display {
+    display: none;
+  }
+
+  .text__desktop--display {
+    display: block;
   }
 }
-.content__text {
+/* внешние отступы элементов */
+.logo__img {
+  margin-right: 22px;
+}
+
+.main {
+  background-color: #f8f8f8;
+  height: 100vh;
+}
+
+.text__mobile,
+.text__tablet,
+.text__desktop {
   letter-spacing: 0.2px;
   font-size: 14px;
   margin-bottom: 16px;
-  line-height: 18px;
 }
 
-.content__button {
+.text__continue {
   position: relative;
   border: none;
   background-color: inherit;
@@ -356,7 +351,7 @@ h3 {
   margin-bottom: 16px;
 }
 
-.content__button::before {
+.text__continue::before {
   content: "";
   background-image: url(../ic/icon-button-arrow.svg);
   position: absolute;
