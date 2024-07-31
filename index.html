@@ -12,8 +12,8 @@
       <div class="container">
         <nav class="menu">
           <div class="contain-btn">
-            <button class="button button--burger">
-              <span class="button__icon button__icon--burger"></span>
+            <button class="header-button">
+              <span class="menu-button menu-button__icon-burger"></span>
             </button>
             <div class="menu__logo logo">
               <a href="#"
@@ -22,23 +22,23 @@
             </div>
           </div>
           <div class="contain-btn">
-            <div class="menu__contacts">
-              <button class="button">
-                <span class="button__icon button__icon--phone"></span>
+            <div class="menu__tablet menu-tablet--display">
+              <button class="header-button">
+                <span class="menu-button menu-button__icon-phone"></span>
               </button>
-              <button class="button">
-                <span class="button__icon button__icon--chat"></span>
+              <button class="header-button">
+                <span class="menu-button menu-button__icon-chat"></span>
               </button>
-              <button class="button">
-                <span class="button__icon button__icon--contact"></span>
+              <button class="header-button">
+                <span class="menu-button menu-button__icon-contact"></span>
               </button>
             </div>
-            <div class="menu__services">
-              <button class="button">
-                <span class="button__icon button__icon--tools"></span>
+            <div class="menu__button-group">
+              <button class="header-button">
+                <span class="menu-button menu-button__icon-tools"></span>
               </button>
-              <button class="button">
-                <span class="button__icon button__icon--search"></span>
+              <button class="header-button">
+                <span class="menu-button menu-button__icon-search"></span>
               </button>
             </div>
           </div>
@@ -47,53 +47,67 @@
     </header>
     <main class="main">
       <div class="container">
-        <header class="main__header header">
-          <h1 class="main__title title">Услуги и сервисы</h1>
-          <div class="header__buttons">
-            <button class="button">
+        <div class="desktop-button-container">
+          <h1 class="main-title main__title">Услуги и сервисы</h1>
+          <div class="desktop-button--display">
+            <button class="header-button">
               Оставить заявку<span
-                class="button__icon button__icon--tools"
+                class="menu-button menu-button__icon-tools"
               ></span>
             </button>
-            <button class="button">
-              Статус ремонта<span class="button__icon button__icon--search">
+            <button class="header-button">
+              Статус ремонта<span class="menu-button menu-button__icon-search">
               </span>
             </button>
           </div>
-        </header>
-        <div class="main__button-section">
-          <button class="main__button">Ремонтируемые устройства</button>
-          <button class="main__button">Дополнительные услуги</button>
-          <button class="main__button">Ремонтируемые бренды</button>
-          <button class="main__button">Цены на услуги</button>
-          <button class="main__button">Адреса сервисных центров</button>
-          <button class="main__button">Специальные цены</button>
-          <button class="main__button">Отзывы</button>
         </div>
-        <section class="about">
-          <div class="about__content content">
-            <div class="content__text">
-              <p>
-                Мы являемся авторизованным сервисным центром по ремонту техники
-                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-                официальной гарантией производителя.
-              </p>
-              <p>
-                Мы успешно работаем с 1992 года и заслужили репутацию надежного
-                партнера, что подтверждает большое количество постоянных
-                клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям
-                и, в свою очередь, советуют нас родным и близким.
-              </p>
-            </div>
-            <button class="content__button">Читать далее</button>
-          </div>
+
+        <div class="main__button-section">
+          <button class="main-button">Ремонтируемые устройства</button>
+          <button class="main-button">Дополнительные услуги</button>
+          <button class="main-button">Ремонтируемые бренды</button>
+          <button class="main-button">Цены на услуги</button>
+          <button class="main-button">Адреса сервисных центров</button>
+          <button class="main-button">Специальные цены</button>
+          <button class="main-button">Отзывы</button>
+        </div>
+        <div class="section-flex">
+          <section class="main-text">
+            <p class="text__mobile">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="text__tablet text__tablet--display">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="text__tablet text__tablet--display">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера
+            </p>
+            <p class="text__desktop text__desktop--display">
+              Мы являемся авторизованным сервисным центром по ремонту техники
+              Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
+              официальной гарантией производителя.
+            </p>
+            <p class="text__desktop text__desktop--display">
+              Мы успешно работаем с 1992 года и заслужили репутацию надежного
+              партнера, что подтверждает большое количество постоянных клиентов.
+              Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+              очередь, советуют нас родным и близким.
+            </p>
+            <button class="text__continue">Читать далее</button>
+          </section>
           <img
-            class="about__logo"
+            class="company__logo-img"
             src="img/logo-picture-desktop.jpg"
             alt="Фотография логотипа компании"
           />
-        </section>
+        </div>
       </div>
     </main>
+    <footer></footer>
   </body>
 </html>
