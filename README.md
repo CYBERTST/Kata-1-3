@@ -1,1 +1,1 @@
-github pages below:: https://cybertst.github.io/Kata-1-3/
+github pages below: https://cybertst.github.io/Kata-1-3/
