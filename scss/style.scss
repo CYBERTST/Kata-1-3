@@ -93,143 +93,71 @@ h3 {
   cursor: pointer;
 }
 /* Кнопки в мейне, стилизация */
-.main-button {
-  font-family: "TT Lakes medium", sans-serif;
-  display: inline-block;
-  padding: 8px 16px;
-  height: 40px;
-  flex-shrink: 0;
-  border-radius: 5px;
-  color: #7e7e82;
-  border-color: #b8ffec;
-  cursor: pointer;
-  background-color: inherit;
-  border: 2px solid transparent;
-}
+.main {
+  &-button {
+    font-family: "TT Lakes medium", sans-serif;
+    display: inline-block;
+    padding: 8px 16px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    color: #7e7e82;
+    border-color: #b8ffec;
+    cursor: pointer;
+    background-color: inherit;
+    border: 2px solid transparent;
+  }
 
-.main__button-section {
-  display: flex;
-}
+  &__button-section {
+    display: flex;
+  }
 
-.main-button:hover {
-  border: 2px solid #b8ffec;
-  background-color: #ffffff;
+  &-button:hover {
+    border: 2px solid #b8ffec;
+    background-color: #ffffff;
+  }
 }
 
 /* Контент кнопок */
-.menu-button__icon-burger {
-  background-image: url(../ic/icon-burger.svg);
-  @extend %menu-button-position;
-}
+.menu {
+  &-button__icon-burger {
+    background-image: url(../ic/icon-burger.svg);
+    @extend %menu-button-position;
+  }
 
-.menu-button__icon-tools {
-  background-image: url(../ic/icon-tools.svg);
-  @extend %menu-button-position;
-}
+  &-button__icon-tools {
+    background-image: url(../ic/icon-tools.svg);
+    @extend %menu-button-position;
+  }
 
-.menu-button__icon-search {
-  background-image: url(../ic/icon-search.svg);
-  @extend %menu-button-position;
-}
+  &-button__icon-search {
+    background-image: url(../ic/icon-search.svg);
+    @extend %menu-button-position;
+  }
 
-.menu-button__icon-phone {
-  background-image: url(../ic/icon-phone.svg);
-  @extend %menu-button-position;
-}
+  &-button__icon-phone {
+    background-image: url(../ic/icon-phone.svg);
+    @extend %menu-button-position;
+  }
 
-.menu-button__icon-chat {
-  background-image: url(../ic/icon-chat.svg);
-  @extend %menu-button-position;
-}
+  &-button__icon-chat {
+    background-image: url(../ic/icon-chat.svg);
+    @extend %menu-button-position;
+  }
 
-.menu-button__icon-contact {
-  background-image: url(../ic/icon-contact.svg);
-  @extend %menu-button-position;
+  &-button__icon-contact {
+    background-image: url(../ic/icon-contact.svg);
+    @extend %menu-button-position;
+  }
 }
-
 /* Блоки кнопок для псевдоэлементов и отображения на разных разрешениях(ширине) */
-.menu__button-group {
-  position: relative;
-  display: flex;
-  gap: 16px;
-}
-.menu__button-group::before {
-  content: "";
-  background-color: #eaeaea;
-  border-radius: 1px;
-  position: absolute;
-  width: 2px;
-  height: 32px;
-  top: 4px;
-  left: -20px;
-}
-
-.menu-tablet--display,
-.desktop-button--display,
-.text__tablet--display,
-.text__desktop--display {
-  display: none;
-}
-
-.main-title {
-  position: relative;
-  display: flex;
-}
-
-.main__title {
-  margin-bottom: 24px;
-}
-
-.main-title::before {
-  content: "";
-  display: block;
-  background-color: #41f6d7;
-  border-radius: 4px;
-  position: absolute;
-  width: 4px;
-  height: 40px;
-  top: 4px;
-  left: -16px;
-}
-
-.main__button-section {
-  margin-bottom: 24px;
-  overflow: hidden;
-}
-
-.company__logo-img {
-  width: 100vw;
-  margin-left: -16px;
-}
-
-@media (max-width: 1120px) {
-  .main__button-section {
-    overflow: scroll;
-    mask: linear-gradient(90deg, #fff 95%, transparent);
-  }
-  .main {
-    height: 90vh;
-  }
-}
-@media (min-width: 768px) {
-  .menu__logo {
-    margin-right: auto;
-    margin-left: 20px;
-  }
-  .menu-tablet--display {
+.menu {
+  &__button-group {
+    position: relative;
     display: flex;
     gap: 16px;
   }
-  .menu__tablet {
-    margin-right: 22px;
-  }
-  .container {
-    padding: 24px;
-  }
-  .menu-button__icon-burger {
-    position: relative;
-  }
-  .menu-button__icon-burger::after {
+  &__button-group::before {
     content: "";
     background-color: #eaeaea;
     border-radius: 1px;
@@ -237,20 +165,108 @@ h3 {
     width: 2px;
     height: 32px;
     top: 4px;
-    right: -20px;
+    left: -20px;
   }
-  .main-title::before {
-    left: -24px;
-  }
-  .main-title,
-  .main__button-section {
-    margin-bottom: 32px;
-  }
-  .text__mobile {
+}
+
+.menu-tablet--display,
+.desktop-button--display {
+  display: none;
+}
+.text {
+  &__tablet--display,
+  &__desktop--display {
     display: none;
   }
-  .text__tablet--display {
+}
+
+.main {
+  &-title {
+    position: relative;
+    display: flex;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &-title::before {
+    content: "";
     display: block;
+    background-color: #41f6d7;
+    border-radius: 4px;
+    position: absolute;
+    width: 4px;
+    height: 40px;
+    top: 4px;
+    left: -16px;
+  }
+
+  &__button-section {
+    margin-bottom: 24px;
+    overflow: hidden;
+  }
+}
+.company__logo-img {
+  width: 100vw;
+  margin-left: -16px;
+}
+
+@media (max-width: 1120px) {
+  .main {
+    height: 90vh;
+    &__button-section {
+      overflow: scroll;
+      mask: linear-gradient(90deg, #fff 95%, transparent);
+    }
+  }
+}
+@media (min-width: 768px) {
+  .menu {
+    &__logo {
+      margin-left: 20px;
+    }
+    &-tablet--display {
+      display: flex;
+      gap: 16px;
+    }
+    &__tablet {
+      margin-right: 22px;
+    }
+    &__icon-burger {
+      position: relative;
+    }
+    &__icon-burger::after {
+      content: "";
+      background-color: #eaeaea;
+      border-radius: 1px;
+      position: absolute;
+      width: 2px;
+      height: 32px;
+      top: 4px;
+      right: -20px;
+    }
+  }
+  .container {
+    padding: 24px;
+  }
+
+  .main {
+    &-title::before {
+      left: -24px;
+    }
+    &-title,
+    &__button-section {
+      margin-bottom: 32px;
+    }
+  }
+  .text {
+    &__mobile {
+      display: none;
+    }
+    &__tablet--display {
+      display: block;
+    }
   }
   .section-flex {
     display: flex;
@@ -268,25 +284,30 @@ h3 {
   .container {
     padding: 42px 25px 50px 35px;
   }
-  .main__title {
-    margin: 0;
+  .main {
+    &__title {
+      margin: 0;
+    }
+    &__button-section {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &-title::before {
+      left: -35px;
+    }
   }
-  .main-title::before {
-    left: -35px;
-  }
-  .desktop-button-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
-  }
-  .desktop-button--display {
-    display: flex;
-    gap: 32px;
-  }
-  .main__button-section {
-    display: flex;
-    flex-wrap: wrap;
+  .desktop {
+    &-button-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    &-button--display {
+      display: flex;
+      gap: 32px;
+    }
   }
   .section-flex {
     gap: 36px;
@@ -295,11 +316,13 @@ h3 {
     height: 305px;
     width: 530px;
   }
-  .text__tablet--display {
-    display: none;
-  }
-  .text__desktop--display {
-    display: block;
+  .text {
+    &__tablet--display {
+      display: none;
+    }
+    &__desktop--display {
+      display: block;
+    }
   }
 }
 
@@ -313,29 +336,31 @@ h3 {
   height: 100vh;
 }
 
-.text__mobile,
-.text__tablet,
-.text__desktop {
-  letter-spacing: 0.2px;
-  font-size: 14px;
-  margin-bottom: 16px;
-}
-.text__continue {
-  position: relative;
-  border: none;
-  background-color: inherit;
-  font-size: 16px;
-  font-weight: 600;
-  margin-left: 20px;
-  cursor: pointer;
-  margin-bottom: 16px;
-}
-.text__continue::before {
-  content: "";
-  background-image: url(../ic/icon-button-arrow.svg);
-  position: absolute;
-  width: 7.5px;
-  height: 10px;
-  top: 6px;
-  left: -20px;
+.text {
+  &__mobile,
+  &__tablet,
+  &__desktop {
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+  &__continue {
+    position: relative;
+    border: none;
+    background-color: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-bottom: 16px;
+  }
+  &__continue::before {
+    content: "";
+    background-image: url(../ic/icon-button-arrow.svg);
+    position: absolute;
+    width: 7.5px;
+    height: 10px;
+    top: 6px;
+    left: -20px;
+  }
 }

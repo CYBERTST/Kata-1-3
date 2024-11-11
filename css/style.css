@@ -109,11 +109,9 @@ h3 {
   background-color: inherit;
   border: 2px solid transparent;
 }
-
 .main__button-section {
   display: flex;
 }
-
 .main-button:hover {
   border: 2px solid #b8ffec;
   background-color: #ffffff;
@@ -123,23 +121,18 @@ h3 {
 .menu-button__icon-burger {
   background-image: url(../ic/icon-burger.svg);
 }
-
 .menu-button__icon-tools {
   background-image: url(../ic/icon-tools.svg);
 }
-
 .menu-button__icon-search {
   background-image: url(../ic/icon-search.svg);
 }
-
 .menu-button__icon-phone {
   background-image: url(../ic/icon-phone.svg);
 }
-
 .menu-button__icon-chat {
   background-image: url(../ic/icon-chat.svg);
 }
-
 .menu-button__icon-contact {
   background-image: url(../ic/icon-contact.svg);
 }
@@ -150,7 +143,6 @@ h3 {
   display: flex;
   gap: 16px;
 }
-
 .menu__button-group::before {
   content: "";
   background-color: #eaeaea;
@@ -163,9 +155,11 @@ h3 {
 }
 
 .menu-tablet--display,
-.desktop-button--display,
-.text__tablet--display,
-.text__desktop--display {
+.desktop-button--display {
+  display: none;
+}
+
+.text__tablet--display, .text__desktop--display {
   display: none;
 }
 
@@ -173,11 +167,9 @@ h3 {
   position: relative;
   display: flex;
 }
-
 .main__title {
   margin-bottom: 24px;
 }
-
 .main-title::before {
   content: "";
   display: block;
@@ -189,7 +181,6 @@ h3 {
   top: 4px;
   left: -16px;
 }
-
 .main__button-section {
   margin-bottom: 24px;
   overflow: hidden;
@@ -201,39 +192,29 @@ h3 {
 }
 
 @media (max-width: 1120px) {
+  .main {
+    height: 90vh;
+  }
   .main__button-section {
     overflow: scroll;
     mask: linear-gradient(90deg, #fff 95%, transparent);
   }
-
-  .main {
-    height: 90vh;
-  }
 }
 @media (min-width: 768px) {
   .menu__logo {
-    margin-right: auto;
     margin-left: 20px;
   }
-
   .menu-tablet--display {
     display: flex;
     gap: 16px;
   }
-
   .menu__tablet {
     margin-right: 22px;
   }
-
-  .container {
-    padding: 24px;
-  }
-
-  .menu-button__icon-burger {
+  .menu__icon-burger {
     position: relative;
   }
-
-  .menu-button__icon-burger::after {
+  .menu__icon-burger::after {
     content: "";
     background-color: #eaeaea;
     border-radius: 1px;
@@ -244,19 +225,20 @@ h3 {
     right: -20px;
   }
 
+  .container {
+    padding: 24px;
+  }
+
   .main-title::before {
     left: -24px;
   }
-
-  .main-title,
-  .main__button-section {
+  .main-title, .main__button-section {
     margin-bottom: 32px;
   }
 
   .text__mobile {
     display: none;
   }
-
   .text__tablet--display {
     display: block;
   }
@@ -283,7 +265,10 @@ h3 {
   .main__title {
     margin: 0;
   }
-
+  .main__button-section {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .main-title::before {
     left: -35px;
   }
@@ -294,15 +279,9 @@ h3 {
     align-items: center;
     margin-bottom: 12px;
   }
-
   .desktop-button--display {
     display: flex;
     gap: 32px;
-  }
-
-  .main__button-section {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .section-flex {
@@ -317,7 +296,6 @@ h3 {
   .text__tablet--display {
     display: none;
   }
-
   .text__desktop--display {
     display: block;
   }
@@ -332,14 +310,11 @@ h3 {
   height: 100vh;
 }
 
-.text__mobile,
-.text__tablet,
-.text__desktop {
+.text__mobile, .text__tablet, .text__desktop {
   letter-spacing: 0.2px;
   font-size: 14px;
   margin-bottom: 16px;
 }
-
 .text__continue {
   position: relative;
   border: none;
@@ -350,7 +325,6 @@ h3 {
   cursor: pointer;
   margin-bottom: 16px;
 }
-
 .text__continue::before {
   content: "";
   background-image: url(../ic/icon-button-arrow.svg);
