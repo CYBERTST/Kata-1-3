@@ -1,5 +1,3 @@
-@charset "UTF-8";
-/* позиционирование контента внутри кнопок */
 .menu-button__icon-burger, .menu-button__icon-tools, .menu-button__icon-search, .menu-button__icon-phone, .menu-button__icon-chat, .menu-button__icon-contact {
   background-position: center;
   background-repeat: no-repeat;
@@ -84,7 +82,6 @@ h3 {
   background-color: inherit;
 }
 
-/* Кнопки в меню, стилизация */
 .menu-button {
   background-color: #ff3e79;
   width: 40px;
@@ -95,7 +92,6 @@ h3 {
   cursor: pointer;
 }
 
-/* Кнопки в мейне, стилизация */
 .main-button {
   font-family: "TT Lakes medium", sans-serif;
   display: inline-block;
@@ -117,7 +113,6 @@ h3 {
   background-color: #ffffff;
 }
 
-/* Контент кнопок */
 .menu-button__icon-burger {
   background-image: url(../ic/icon-burger.svg);
 }
@@ -137,7 +132,6 @@ h3 {
   background-image: url(../ic/icon-contact.svg);
 }
 
-/* Блоки кнопок для псевдоэлементов и отображения на разных разрешениях(ширине) */
 .menu__button-group {
   position: relative;
   display: flex;
@@ -300,7 +294,6 @@ h3 {
     display: block;
   }
 }
-/* внешние отступы элементов */
 .logo__img {
   margin-right: 22px;
 }

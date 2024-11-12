@@ -1,4 +1,3 @@
-/* позиционирование контента внутри кнопок */
 %menu-button-position {
   background-position: center;
   background-repeat: no-repeat;
@@ -82,7 +81,7 @@ h3 {
   font-weight: 600;
   background-color: inherit;
 }
-/* Кнопки в меню, стилизация */
+
 .menu-button {
   background-color: #ff3e79;
   width: 40px;
@@ -92,7 +91,7 @@ h3 {
   border: none;
   cursor: pointer;
 }
-/* Кнопки в мейне, стилизация */
+
 .main {
   &-button {
     font-family: "TT Lakes medium", sans-serif;
@@ -118,7 +117,6 @@ h3 {
   }
 }
 
-/* Контент кнопок */
 .menu {
   &-button__icon-burger {
     background-image: url(../ic/icon-burger.svg);
@@ -150,7 +148,7 @@ h3 {
     @extend %menu-button-position;
   }
 }
-/* Блоки кнопок для псевдоэлементов и отображения на разных разрешениях(ширине) */
+
 .menu {
   &__button-group {
     position: relative;
@@ -326,7 +324,6 @@ h3 {
   }
 }
 
-/* внешние отступы элементов */
 .logo__img {
   margin-right: 22px;
 }
