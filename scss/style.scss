@@ -105,15 +105,15 @@ h3 {
     cursor: pointer;
     background-color: inherit;
     border: 2px solid transparent;
+
+    &:hover {
+      border: 2px solid #b8ffec;
+      background-color: #ffffff;
+    }
   }
 
   &__button-section {
     display: flex;
-  }
-
-  &-button:hover {
-    border: 2px solid #b8ffec;
-    background-color: #ffffff;
   }
 }
 
@@ -154,16 +154,17 @@ h3 {
     position: relative;
     display: flex;
     gap: 16px;
-  }
-  &__button-group::before {
-    content: "";
-    background-color: #eaeaea;
-    border-radius: 1px;
-    position: absolute;
-    width: 2px;
-    height: 32px;
-    top: 4px;
-    left: -20px;
+
+    &::before {
+      content: "";
+      background-color: #eaeaea;
+      border-radius: 1px;
+      position: absolute;
+      width: 2px;
+      height: 32px;
+      top: 4px;
+      left: -20px;
+    }
   }
 }
 
@@ -186,18 +187,18 @@ h3 {
 
   &__title {
     margin-bottom: 24px;
-  }
 
-  &-title::before {
-    content: "";
-    display: block;
-    background-color: #41f6d7;
-    border-radius: 4px;
-    position: absolute;
-    width: 4px;
-    height: 40px;
-    top: 4px;
-    left: -16px;
+    &::before {
+      content: "";
+      display: block;
+      background-color: #41f6d7;
+      border-radius: 4px;
+      position: absolute;
+      width: 4px;
+      height: 40px;
+      top: 4px;
+      left: -16px;
+    }
   }
 
   &__button-section {
@@ -233,16 +234,17 @@ h3 {
     }
     &__icon-burger {
       position: relative;
-    }
-    &__icon-burger::after {
-      content: "";
-      background-color: #eaeaea;
-      border-radius: 1px;
-      position: absolute;
-      width: 2px;
-      height: 32px;
-      top: 4px;
-      right: -20px;
+
+      &:after {
+        content: "";
+        background-color: #eaeaea;
+        border-radius: 1px;
+        position: absolute;
+        width: 2px;
+        height: 32px;
+        top: 4px;
+        right: -20px;
+      }
     }
   }
   .container {
@@ -285,14 +287,14 @@ h3 {
   .main {
     &__title {
       margin: 0;
+
+      &::before {
+        left: -35px;
+      }
     }
     &__button-section {
       display: flex;
       flex-wrap: wrap;
-    }
-
-    &-title::before {
-      left: -35px;
     }
   }
   .desktop {
@@ -350,14 +352,15 @@ h3 {
     margin-left: 20px;
     cursor: pointer;
     margin-bottom: 16px;
-  }
-  &__continue::before {
-    content: "";
-    background-image: url(../ic/icon-button-arrow.svg);
-    position: absolute;
-    width: 7.5px;
-    height: 10px;
-    top: 6px;
-    left: -20px;
+
+    &::before {
+      content: "";
+      background-image: url(../ic/icon-button-arrow.svg);
+      position: absolute;
+      width: 7.5px;
+      height: 10px;
+      top: 6px;
+      left: -20px;
+    }
   }
 }

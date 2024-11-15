@@ -105,12 +105,12 @@ h3 {
   background-color: inherit;
   border: 2px solid transparent;
 }
-.main__button-section {
-  display: flex;
-}
 .main-button:hover {
   border: 2px solid #b8ffec;
   background-color: #ffffff;
+}
+.main__button-section {
+  display: flex;
 }
 
 .menu-button__icon-burger {
@@ -164,7 +164,7 @@ h3 {
 .main__title {
   margin-bottom: 24px;
 }
-.main-title::before {
+.main__title::before {
   content: "";
   display: block;
   background-color: #41f6d7;
@@ -208,7 +208,7 @@ h3 {
   .menu__icon-burger {
     position: relative;
   }
-  .menu__icon-burger::after {
+  .menu__icon-burger:after {
     content: "";
     background-color: #eaeaea;
     border-radius: 1px;
@@ -259,12 +259,12 @@ h3 {
   .main__title {
     margin: 0;
   }
+  .main__title::before {
+    left: -35px;
+  }
   .main__button-section {
     display: flex;
     flex-wrap: wrap;
-  }
-  .main-title::before {
-    left: -35px;
   }
 
   .desktop-button-container {
